@@ -80,12 +80,12 @@ export default class Blockchain {
 	public isValidTransaction(transaction: Transaction): boolean {
 
 		if (!transaction.from || !transaction.to) {
-			console.error("Transaction must include a sender and a recipient.")
+			console.error("La transaction ne possède pas d'expéditeur ou de destinatire")
 			return false
 		}
 
 		if (!transaction.amount || transaction.amount <= 0) {
-			console.error("Transaction must include a positive amount.")
+			console.error("Le montant de la transaction doit être positif")
 			return false
 		}
 
@@ -95,7 +95,7 @@ export default class Blockchain {
 		}
 
 		if (!transaction.signature) {
-			console.error("Transaction must include a signature.")
+			console.error("La transaction ne possède pas de signature")
 			return false
 		}
 
@@ -107,7 +107,7 @@ export default class Blockchain {
 		const result = crypto.createVerify("SHA256").update(transaction.hash).verify(transaction.from.publicKey, transaction.signature, "hex")
 
 		if (!result) {
-			console.error("Invalid signature for this transaction.")
+			console.error("La signature de la transaction est invalide")
 			return false
 		}
 		
