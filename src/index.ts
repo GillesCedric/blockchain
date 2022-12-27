@@ -6,6 +6,7 @@ import Transaction from "./Transaction"
 const blockchain = new Blockchain()
 
 //Affichage du dernier bloc de la blockchain (le bloc génésis pour l'instant)
+console.log("\nBloc de génèse\n")
 console.log(blockchain.getLatestBlock())
 
 //Création des adresses
@@ -57,8 +58,10 @@ try {
 	]
 
 	//vérification et ajout des transactions dans la blockchain
+	let i = 1
 	for (const transaction of transactions) {
 		//vérification de la validité des transactions
+		console.log("\nTransaction "+i+"\n")
 		console.log(blockchain.isValidTransaction(transaction))
 
 		//ajout des transactions dans la blockchain
@@ -69,12 +72,14 @@ try {
 	console.log(blockchain.getLast10Transactions())
 
 	//affichage de la validité de la blockchain
+	console.log("\nValidité de la chîne :\n")
 	console.log(blockchain.isValidChain())
 
 	//altération de la blockchain
 	blockchain.alterBlock(1, 1, undefined, undefined, 800)
 
 	//affichage de la validité de la blockchain
+	console.log("\nValidité de la chîne :\n")
 	console.log(blockchain.isValidChain())
 } catch (error) {
 	console.error(error)
