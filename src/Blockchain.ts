@@ -7,8 +7,8 @@ export default class Blockchain {
 	private pendingTransactions: Transaction[]
 	public static difficulty: number = 3
 	public static miningReward: number = 0.1
-	public static readonly BLOCK_NUMBER_TRANSACTIONS = 2
-	public static readonly BASE_ACCOUNT_AMOUNT = 1500
+	public static readonly BLOCK_NUMBER_TRANSACTIONS = 10
+	public static readonly BASE_ACCOUNT_AMOUNT = 5000
 
 	constructor() {
 		this.chain = [this.createGenesisBlock()]
