@@ -5,8 +5,8 @@
 ### -	BlockChain :
 -	**Rôle** : Cette classe permet d’instancier une nouvelle blockchain 
 -	**Attributs** :  
-  - *chain* : cet Attribut représente la liste des blocks de la blockchain 
-  - *pendingTransactions* : cette attribut représente la liste des transactions  en attente (qui n’ont pas encore été ajouté à un bloc) 
+ - *chain* : cet Attribut représente la liste des blocks de la blockchain 
+ - *pendingTransactions* : cette attribut représente la liste des transactions  en attente (qui n’ont pas encore été ajouté à un bloc) 
   - *difficulty* : cet attribut représente la difficulté de minage d’un bloc 
   - *miningReward* : cet attribut représente le gain d’un mineur après un minage réussit 
   - *BLOCK_NUMBER_TRANSACTIONS* : cet attribut représente le nombre de transactions par bloc 
