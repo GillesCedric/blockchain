@@ -71,17 +71,18 @@
 ### Première façon  :
 
 Ce projet est fourni avec ce rapport un Dockerfile permettant de cloner le projet sur github, de le construire et de l’exécuter.
-1.	Lancer Docker sous Windows ou sous Linux (Le Dockerfile a été créé sous Windows)
-2.	Copier le Dockerfile dans un répertoire de sa machine
-3.	Ouvrir un terminal (de prédérence administrateur) dans le répertoire du Dockerfile
-4.	Taper la commande *`docker build -t blockchain-typescript .`*
-5.	Taper la commande *`docker run blockchain-typescript`*
+1.	Télécharger le [Dockerfile](https://github.com/GillesCedric/blockchain/blob/main/Dockerfile) depuis le répertoire du projet
+2.	Lancer Docker sous Windows ou sous Linux (Le Dockerfile a été créé sous Windows)
+3.	Copier le Dockerfile dans un répertoire de sa machine
+4.	Ouvrir un terminal (de prédérence administrateur) dans le répertoire du Dockerfile
+5.	Taper la commande *`docker build -t blockchain-typescript .`*
+6.	Taper la commande *`docker run blockchain-typescript`*
 
 ### Deuxième façon  :
 
 1.	Cloner ou télécharger tout le projet depuis ce répertoire
 2.	Ouvrir un terminal  dans le répertoire du projet
-3.	Taper la commande *`npm install .`* pour installer les dépendances du projet
+3.	Taper la commande *`npm install`* pour installer les dépendances du projet
 4.	Taper la commande *`npm start ou npm run start`* pour démarrer le projet
 
 **Préréquis** :
