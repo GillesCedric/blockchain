@@ -5,23 +5,23 @@
 ### -	BlockChain :
 -	**Rôle** : Cette classe permet d’instancier une nouvelle blockchain 
 -	**Attributs** :  
-o	*chain* : cet Attribut représente la liste des blocks de la blockchain 
-o	*pendingTransactions* : cette attribut représente la liste des transactions  en attente (qui n’ont pas encore été ajouté à un bloc) 
-o	**difficulty** : cet attribut représente la difficulté de minage d’un bloc 
-o	**miningReward** : cet attribut représente le gain d’un mineur après un minage réussit 
-o	**BLOCK_NUMBER_TRANSACTIONS** : cet attribut représente le nombre de transactions par bloc 
-o	**BASE_ACCOUNT_AMOUNT** : cet attribut représente le montant de base à la création d’un compte (Address) 
--	**Méthode** :  
-o	**createGenesisBlock** : Cette méthode permet de créer le premier bloc de la BlockChain. 
-o	**getLatestBlock** : Pour récupérer le dernier bloc de la blockchain 
-o	**addBlock : Pour ajouter un bloc. 
-o	**addTransaction : Pour ajouter une transaction. 
-o	**isValidBlock :Verifie si un bloc est valide. 
-o	**isValidTransaction : Verifi si une transaction est valide. 
-o	**isValidChain : Verifie si la blockChain est valide. 
-o	**getLast10Transactions :Récupérer les 10 dernières transactions. 
-o	**Mine : Pour miner un bloc. 
-o	**alterBlock : Pour altérer un bloc 
+  - *chain* : cet Attribut représente la liste des blocks de la blockchain 
+  - *pendingTransactions* : cette attribut représente la liste des transactions  en attente (qui n’ont pas encore été ajouté à un bloc) 
+  - *difficulty* : cet attribut représente la difficulté de minage d’un bloc 
+  - *miningReward* : cet attribut représente le gain d’un mineur après un minage réussit 
+  - *BLOCK_NUMBER_TRANSACTIONS* : cet attribut représente le nombre de transactions par bloc 
+  - *BASE_ACCOUNT_AMOUNT* : cet attribut représente le montant de base à la création d’un compte (Address) 
+-	*Méthode* :  
+  - *createGenesisBlock* : Cette méthode permet de créer le premier bloc de la BlockChain. 
+  - *getLatestBlock* : Pour récupérer le dernier bloc de la blockchain 
+  - *addBlock* : Pour ajouter un bloc. 
+  - *addTransaction* : Pour ajouter une transaction. 
+  - *isValidBlock* :Verifie si un bloc est valide. 
+  - *isValidTransaction* : Verifi si une transaction est valide. 
+  - *isValidChain* : Verifie si la blockChain est valide. 
+  - *getLast10Transactions* :Récupérer les 10 dernières transactions. 
+  - *Mine* : Pour miner un bloc. 
+  - *alterBlock* : Pour altérer un bloc 
  
 -	Block : 
 -	Rôle : Cette classe permet d’instancier un nouveau bloc 
